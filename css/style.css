@@ -17,3 +17,26 @@ img{
     height: auto;
     max-width: 100%;
 }
+h2{
+    color: white;
+    text-align: center;
+}
+p{
+    text-align: justify;
+}
+.titulo{
+    background: red;
+    text-align: center;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+}
+.subtitulo{
+    background: rgb(60, 255, 0);
+    text-align: center;
+    color: rgb(17, 0, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.botones{
+    background: red;
+}
