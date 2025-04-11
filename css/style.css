@@ -1,42 +1,85 @@
-/*{
-    margin: 0;
-}*/
-body{
-    background-color: aquamarine;
-    margin: 30px;
-    
+h2 {
+    /* este estilo afecta a todos los h2 de INDEX2.html */
+
+    font-size: 60px;
+    color: rgb(14, 116, 102);
+    background-color: darkkhaki;
 }
-.movistar{
-    background: rgb(1, 97, 14); color: white; 
-    text-align: center;
-    padding: 10px 10px 10px 10px;
-    border-radius: 20px;
+
+.textomorado {
+    /* clase css que aplica color morado y fuente LucidaSAns */
+    color: blueviolet;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-img{
-    width: 50%;
-    height: auto;
-    max-width: 100%;
+
+.claseContenedorDiv1 {
+    /* afectara a algunos contenedores div */
+    font-size: 40px;
+    width: 800px;
+    height: 600px;
+    background-color: rgb(238, 255, 0);
+
 }
-h2{
-    color: white;
-    text-align: center;
-}
-p{
-    text-align: justify;
-}
-.titulo{
-    background: red;
-    text-align: center;
-    color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+#fondonaranja {
+    /* identificador que solo afecta a una etiqueta */
+    background-color: rgb(199, 154, 65);
     font-size: 30px;
-}
-.subtitulo{
-    background: rgb(60, 255, 0);
     text-align: center;
-    color: rgb(17, 0, 255);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.botones{
-    background: red;
+
+.textomorado:hover {
+    /* pseudoclase que afecta al posicionarte con mouse */
+    background-color: rgb(255, 127, 249);
+    color: rgb(51, 95, 6);
+
+}
+
+.claseContenedorDiv1::first-letter {
+    /* seudoelelmento que afecta a la primera letra*/
+    font-size: 80px;
+    color: crimson;
+}
+
+h2 {
+    /* este estilo afecta a todos los h2 de INDEX2.html */
+
+    font-size: 60px;
+    color: rgb(14, 116, 102);
+    background-color: darkkhaki;
+}
+
+.textomorado {
+    /* clase css que aplica color morado y fuente LucidaSAns */
+    color: blueviolet;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.claseContenedorDiv1 {
+    /* afectara a algunos contenedores div */
+    font-size: 40px;
+    width: 800px;
+    height: 600px;
+    background-color: rgb(238, 255, 0);
+
+}
+
+#fondonaranja {
+    /* identificador que solo afecta a una etiqueta */
+    background-color: rgb(199, 154, 65);
+    font-size: 30px;
+    text-align: center;
+}
+
+.textomorado:hover {
+    /* pseudoclase que afecta al posicionarte con mouse */
+    background-color: rgb(255, 127, 249);
+    color: rgb(51, 95, 6);
+
+}
+
+.claseContenedorDiv1::first-letter {
+    /* seudoelelmento que afecta a la primera letra*/
+    font-size: 80px;
+    color: crimson;
 }
