@@ -1,85 +1,161 @@
-h2 {
-    /* este estilo afecta a todos los h2 de INDEX2.html */
-
-    font-size: 60px;
-    color: rgb(14, 116, 102);
-    background-color: darkkhaki;
+/* SELECTOC CON SU BLOQUE DE DECLARACIONES */ 
+h2 {  /* este estilo afecta a todos los h2 en index2.thml */ 
+    font-size: 4em; 
+    color: rgb(255, 123, 0);
+    background-color: rgb(144, 223, 16);  
 }
 
-.textomorado {
-    /* clase css que aplica color morado y fuente LucidaSAns */
-    color: blueviolet;
+.textoanaranjado { /* clase css que aplica color anaranjad y fuentes lucidaSAns */ 
+    color: rgb(243, 158, 0);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.claseContenedorDiv1 {
-    /* afectara a algunos contenedores div */
+
+.claseContenedorDv1 { /* afectara a algunos contenedores Div */ 
     font-size: 40px;
-    width: 800px;
+     width: 800px;
     height: 600px;
-    background-color: rgb(238, 255, 0);
+    background-color: rgb(17, 240, 165);
 
 }
 
-#fondonaranja {
-    /* identificador que solo afecta a una etiqueta */
-    background-color: rgb(199, 154, 65);
-    font-size: 30px;
+
+#fondoazul { /* identificador que solo afecta a una etiqueta */ 
+    background-color: rgb(68, 1, 252);
+    font-size: 45px;
     text-align: center;
 }
-
-.textomorado:hover {
-    /* pseudoclase que afecta al posicionarte con mouse */
-    background-color: rgb(255, 127, 249);
-    color: rgb(51, 95, 6);
+.textoanaranjado:hover { 
+    background-color: brown;
+     color: rgb(236, 221, 15);
 
 }
 
-.claseContenedorDiv1::first-letter {
-    /* seudoelelmento que afecta a la primera letra*/
+.claseContenedorDv1::first-letter { 
+    /* seudoelemento que afecta a la letra inicial */ 
     font-size: 80px;
-    color: crimson;
+    color: rgb(241, 218, 7);
+}
+.clase_absolute {
+    font-size: 20px;
+    background-color: coral;
+    height: 250px;
+    width: 200px;
+    position: absolute;
+    top: 300px;
+    left: 600px;
+}
+.clase_relative {
+    font-size: 20px;
+    background-color: rgb(26, 228, 8);
+    height: 250px;
+    width: 200px;
+    position: relative;
+
 }
 
-h2 {
-    /* este estilo afecta a todos los h2 de INDEX2.html */
+.clase_relative3 {
+    font-size: 20px;
+    background-color: rgb(26, 228, 8);
+    height: 200px;
+    width: 150px;
+    position: absolute;
+    bottom: 300px;
+    left: 600px;
 
-    font-size: 60px;
-    color: rgb(14, 116, 102);
-    background-color: darkkhaki;
+}
+.clase_fixed {
+    height: 200px;
+    width: 150px;
+    position: fixed ;
+    left: 500px;
+    bottom: 300px;
+     z-index: -10;
 }
 
-.textomorado {
-    /* clase css que aplica color morado y fuente LucidaSAns */
+.marca_agua {
+opacity: 0.3;
+pointer-events: none;
+z-index: 10;
+
+
+}
+
+.clase_sticky {
+    position: sticky;
+    font-size: 400px;
+    top: 0px;
+    left: 600px;
+    height: 300px;
+}
+
+.bloque { /*estilo display por defecto*/
+    background-color: currentColor;
+    font-size: 20px;
+    margin: 20px;
     color: blueviolet;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+.tipoinlineblock  { /*estilo display */
+background-color: darkolivegreen(255 , 47,0);
+font-size: 30px;
+margin:10px ;
+color: forestgreen (127, 255, 185);
+display: inline-block;
+width: 500px; 
+
 }
 
-.claseContenedorDiv1 {
-    /* afectara a algunos contenedores div */
-    font-size: 40px;
-    width: 800px;
-    height: 600px;
-    background-color: rgb(238, 255, 0);
 
-}
-
-#fondonaranja {
-    /* identificador que solo afecta a una etiqueta */
-    background-color: rgb(199, 154, 65);
+.enlinea { /*estil display enline */
+    background-color: darkgreen;
+    display: inline;
     font-size: 30px;
-    text-align: center;
-}
+    margin: 2px;
+    color: rgb(12, 94, 245);
+    width: 40px;
+    height: 41px;
 
-.textomorado:hover {
-    /* pseudoclase que afecta al posicionarte con mouse */
-    background-color: rgb(255, 127, 249);
-    color: rgb(51, 95, 6);
+    }
+    .tiponone { /*estilo display none */
+        background-color: coral;
+        font-size: 20px;
+        margin: 20px;
+        color: darkolivegreen;
+        display: none;
 
-}
+    }
 
-.claseContenedorDiv1::first-letter {
-    /* seudoelelmento que afecta a la primera letra*/
-    font-size: 80px;
-    color: crimson;
+    .tipohidden { /*estilo display hidden */
+        background-color: coral;
+        font-size: 20px;
+        margin: 20px;
+        color: darkolivegreen;
+        display: hidden;
+
+    }
+    .tipoflex {
+        display: flex;
+        background-color: aqua;
+        align-items:center ;
+        justify-content: space-between;
+        
+        }
+
+
+
+        .claseNav {
+            background-color: darkred;
+            font-size: 30PX;
+            padding-inline: 0px;
+            color: azure;
+            display: inline;
+            list-style-type: none;
+
+        }
+
+
+.claseNav a:hover {
+    background-color: chartreuse;
+
 }

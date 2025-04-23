@@ -1,0 +1,222 @@
+h1 {
+    font-size: 5em;
+    /*Declaracion CCS1*/
+    color: blue;
+    /*Declaracion CSS2*/
+    background-color: aqua;
+}
+
+h2 {
+    font: 3em;
+    color: red;
+}
+
+.textomorado {
+    color: violet;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Clase CSS aplica color morado y fuente Times New Roman*/
+
+.contenedor_div1 {
+    font-size: 40px;
+    /*Tamaño de la letra*/
+    width: 100;
+    /*Ancho*/
+    height: 120;
+    /*Alto*/
+    background-color: rgb(179, 177, 157);
+}
+
+/*Color del fondo*/
+
+#fondo_naranja {
+    background-color: orange;
+    font-size: 30;
+    text-align: center;
+}
+
+/*Identificador que solo afecta a una etiqueta*/
+
+.contenedor_div1:hover {
+    color: blue;
+}
+
+/*HOVER= ANIMACION AL PONER EL CURSOR ENCIMA*/
+
+.contenedor_div1::first-letter {
+    font-size: 80PX;
+    /*Seudoelemento que afecta a la 1era letra */
+    color: crimson;
+}
+
+.clase_Static {
+    font-size: 20px;
+    background-color: aqua;
+    position: static;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 80px;
+}
+
+.clase_Static2 {
+    font-size: 20px;
+    background-color: aqua;
+    position: static;
+    top: 20px;
+    /* esto no funciona en static */
+    left: 80px;
+    /* esto no funciona en static */
+    right: 200px;
+    /* esto no funciona en static */
+}
+
+.clase_Relative {
+    font-size: 20px;
+    background-color: rgb(187, 218, 77);
+    height: 250px;
+    width: 200px;
+}
+
+.clase_Relative:hover {
+    position: relative;
+    top: 100px;
+    left: 100px;
+    z-index: -5;
+    /* z-index para colocar adelante o atras en profundidad 
+                                  respecto a otro elemento  */
+}
+
+.clase_Relative2 {
+    font-size: 20px;
+    background-color: rgb(187, 218, 77);
+    height: 250px;
+    width: 200px;
+}
+
+.clase_Relative2:hover {
+    position: relative;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.clase_absolute {
+    font-size: 20px;
+    background-color: chartreuse;
+    height: 250px;
+    width: 200px;
+    position: absolute;
+    top: 500px;
+    /* de arriba  hacia abajo, osea baja */
+    left: 100px;
+    z-index: -10;
+}
+
+.clase_Relative3 {
+    font-size: 20px;
+    background-color: chartreuse;
+    height: 250px;
+    width: 200px;
+    position: relative;
+}
+
+.clase_AbsoluteRelative {
+    font-size: 20px;
+    background-color: chartreuse;
+    height: 200px;
+    width: 150px;
+    position: absolute;
+    bottom: 300px;
+    /* de abajo hacia arriba, osea sube */
+    left: 600px;
+    z-index: -5;
+}
+
+
+.clase_Fixed {
+    height: 320px;
+    width: 300px;
+    position: fixed;
+    left: 600px;
+    bottom: 300px;
+    z-index: -10;
+}
+
+.marca_agua {
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.clase_Sticky {
+    position: sticky;
+    font-size: 40px;
+    top: 0px;
+    left: 40px;
+    height: 300px;
+}
+
+.bloque {
+    background-color: blue;
+    font-size: 20px;
+    margin: 20px;
+    color: aquamarine;
+}
+
+.tipoinlineblock {
+    background-color: rgb(206, 34, 34);
+    font-size: 30px;
+    margin: 10px;
+    color: rgb(199, 134, 35);
+    display: inline-block;
+    width: 500px;
+}
+
+.enlinea {
+    background-color: red;
+    display: inline;
+    font-size: 30px;
+    margin: 2px;
+    color: mediumpurple;
+    width: 80px;
+}
+
+.tiponone {
+    background-color: red;
+    font-size: 20px;
+    margin: 20px;
+    color: dodgerblue;
+    display: none;
+}
+
+.tipohidden {
+    background-color: red;
+    font-size: 20px;
+    margin: 20px;
+    color: darkolivegreen;
+    visibility: hidden;
+}
+
+.tipoflex {
+    display: flex;
+    background-color: aqua;
+    align-items: center;
+    justify-content: center;
+}
+
+.claseNav {
+    background-color: darkred;
+    font-size: 30PX;
+    padding-inline: 0px;
+    color: azure;
+    display: inline;
+    list-style-type: none;
+
+}
+
+
+.claseNav a:hover {
+    background-color: chartreuse;
+
+}
