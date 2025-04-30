@@ -19,3 +19,16 @@ function FCambioColor() {
 let vTexto1 = "Texto fuera de funcion"; // vTexto1 no es la variable de la función
 console.log(vTexto1);
 console.log(typeof varTemporal === "undefined" ? "varTemporal no está definido afuera de la función" : varTemporal);
+
+function FCambioClase1() {
+    let vTexto2 = document.getElementsByClassName("classDOM1");
+    vTexto2[0].innerHTML = "Elemento [1] del arreglo de clase classDOM1";
+    console.log("Tamaño del array=", vTexto2.length);
+    // se coloca el índice 1 por ser el 2do elemento de la clase classDOM1 de la pag web
+}
+
+function FCambioTag1() {
+    let vTexto3 = document.getElementsByTagName('h2');
+    vTexto3[10].innerHTML = "Elemento h2 cambiado por TagDOM1";
+    // se coloca el índice 6 por ser el 7mo elemento h2 de la pag web index.html
+}
