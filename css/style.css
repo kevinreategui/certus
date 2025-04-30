@@ -201,3 +201,9 @@ h2 {  /* este estilo afecta a todos los h2 en index2.html */
 .formulario button:hover {
     background-color: #0056b3;
 }
+
+#ejmDOM1 {
+    color: #4400ff;
+    font-weight: bold;
+  }
+  
