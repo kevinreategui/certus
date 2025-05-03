@@ -182,12 +182,12 @@
 
     <h2>formulrio de regitro</h2>
     <form action="index.html" method="post">
-        <p><label for="nombre">Nombre: <input type="text" id="nombre"> </label></p>
-        <p><label for="apellido">Apellido: <input type="text" id="apellido"> </label></p>
-        <p><label for="edad">Edad: <input type="text" id="edad"> </label></p>
+        <p><label for="nombre">Nombre: <input type="text" id="nombre" class="datosPersonales"> </label></p>
+        <p><label for="apellido">Apellido: <input type="text" id="apellido" class="datosPersonales"> </label></p>
+        <p><label for="edad">Edad: <input type="text" id="edad" class="datosPersonales"> </label></p>
         <p><label for="observacion">Observacion:
-                <textarea name="observacion" id="" style="height: 180px; width:300px; font-size: 25px;"></textarea>
-            </label>
+            <textarea name="observacion" id="observacion" style="height: 180px; width:300px; font-size: 25px;"></textarea>
+        </label>
         </p>
         <p><label for="estatura">
                 <select name="grpoestatura" id="estatura">
@@ -228,7 +228,8 @@
         <br>
         <br>
         <label for="clave"> SELECCIONE CLAVE:
-            <input style="font-size:15px" type="password" name="clave" id="clave" autofocus minlength="5" maxlength="10">
+            <input style="font-size:15px" type="password" name="clave" id="clave" autofocus minlength="5"
+                maxlength="10">
         </label>
 
         <label for="resetear"> RESETEAR:
@@ -236,8 +237,7 @@
         </label>
 
         <br>
-
-
+        <button type="button" onclick="FCapturarNombre()" style="font-size:20px; margin: 10px 0;">Capturar Datos</button><br> <br>
         <button type="submit" style="font-size:30px ;"> enviar </button>
     </form>
     <p class="classDOM1"> texto 1 de class dom1</p>
@@ -250,10 +250,14 @@
     <section>
         <h1 style="font-size:56px;">EJEMPLO DE MANIPULACION DEL DOM</h1>
         <p id="ejmDOM1" style="font-size:25px;">Este es primer texto a aplicar DOM</p>
-      
+
         <button onclick="FCambioColor()">CAMBIAR COLOR</button>
-      </section> <br>
-      <button onclick="FAgregarTextoPermanente()">Agregar texto a primera variable</button>
+    </section> <br>
+    <button onclick="FAgregarTextoPermanente()">Agregar texto a primera variable</button>
+    <h2>Uso de create de elemento</h2>
+    <section id="idCrearH1">
+        <button onclick="fcrearH1()">CREAR H1</button>
+    </section>
 
 </body>
 
