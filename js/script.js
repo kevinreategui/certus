@@ -32,3 +32,14 @@ function FCambioTag1() {
     vTexto3[10].innerHTML = "Elemento h2 cambiado por TagDOM1";
     // se coloca el índice 6 por ser el 7mo elemento h2 de la pag web index.html
 }
+
+window.vTexto1 = "";
+console.log("Texto fuera de funcion");
+
+function FAgregarTextoPermanente() {
+    let textoAdicional = "\nTexto adicional para concatenar";
+    vTexto1 = vTexto1 + textoAdicional;
+    console.log("tipo de variable de vTexto1 =", typeof vTexto1);
+    console.log(vTexto1);
+}
+FAgregarTextoPermanente();
