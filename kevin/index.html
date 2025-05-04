@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Certus - Página con CSS</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <script type="text/javascript" src="js/script1.js"></script>
+</head>
+
+<body style="background-color: rgb(161, 177, 118);">
+
+    <!-- Encabezado -->
+    <header>    
+        <section id="splash">
+            <img src="img/logo.png" alt="Logo del curso">
+            <h1>CERTUS - Curso: Lenguajes para el Desarrollo</h1>
+            <h3>Profesor: Jhon Frank Bravo</h3>
+            <p>Integrantes del grupo</p>
+            <table>
+                <tr>
+                    <th class="grupo">1</th>
+                    <th class="grupo">Kevin Kliner Reategui Ríos</th>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <!-- Menú Principal -->
+            <h1 style="background-color: aqua; text-align: center;">MENU CON CSS</h1>
+            <nav class="claseNav">
+                <a class="claseNav" href="https://www.digemid.minsa.gob.pe/webDigemid/">Inicio</a>
+                <a class="claseNav" href="#sobredigemid">Sobre Digemid</a>
+                <a class="claseNav" href="https://opm-digemid.minsa.gob.pe/#/consulta-producto">Producto</a>
+                <a class="claseNav"
+                    href="https://www.digemid.minsa.gob.pe/webDigemid/preguntas-frecuentes/">Contacto</a>
+            </nav>
+        </section>
+    </header>
+    <!-- Menú Secundario con Submenú -->
+    <section>
+        <h1 style="background-color: aqua; text-align: center;">MENÚ SECUNDARIO con SUBMENÚ CON CSS</h1>
+        <nav>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="https://www.gob.pe/indecopi">INDECOPI</a>
+                    <ul class="submenu">
+                        <li><a href="https://www.gob.pe/institucion/indecopi/tema/deudas-o-multas">DEUDAS Y MULTAS</a>
+                        </li>
+                        <li><a href="https://www.gob.pe/institucion/indecopi/tema/reclamos">RECLAMOS</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="https://www.defensoria.gob.pe/">DEFENSORÍA DEL PUEBLO</a>
+                    <ul class="submenu">
+                        <li><a href="https://www.gob.pe/institucion/indecopi/tema/deudas-o-multas">SUBMENÚ 1</a></li>
+                        <li><a href="https://www.gob.pe/institucion/indecopi/tema/reclamos">SUBMENÚ 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <section id="tienda">
+        <h1 style="background: aqua;text-align: center;color: rgb(0, 0, 0); padding: 10px;">Tienda Virtual</h1>
+        <h3>Productos Destacados</h3>
+        <div class="grid-productos">
+            <div class="producto">
+                <img src="img/producto.png" alt="Producto 1">
+                <h3>Producto 1</h3>
+                <p>Descripción breve del producto.</p>
+                <span class="precio">$19.99</span><br>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="img/producto.png" alt="Producto 2">
+                <h3>Producto 2</h3>
+                <p>Otra descripción atractiva.</p>
+                <span class="precio">$24.99</span><br>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="img/producto.png" alt="Producto 3">
+                <h3>Producto 3</h3>
+                <p>Producto de excelente calidad.</p>
+                <span class="precio">$29.99</span><br>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="img/producto.png" alt="Producto 3">
+                <h3>Producto 4</h3>
+                <p>Producto de excelente calidad.</p>
+                <span class="precio">$39.99</span><br>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
+    <!-- Formulario -->
+    <section>
+        <h1 style="background: aqua;text-align: center;color: rgb(0, 0, 0); padding: 10px;">Formulario con JavaScript y CSS</h1>
+        <h3>Formulario de Registro</h3>
+        <form action="#" method="post">
+            <p><label for="nombre">Nombre:
+                    <input type="text" id="nombre" class="datosPersonales" placeholder="Escribe tu nombre" required>
+                </label></p>
+
+            <p><label for="apellido">Apellido:
+                    <input type="text" id="apellido" class="datosPersonales" placeholder="Escribe tu apellido" required>
+                </label></p>
+
+            <p><label for="edad">Edad:
+                    <input type="text" id="edad" class="datosPersonales" placeholder="Ejemplo: 20" required>
+                </label></p>
+
+            <p><label for="observacion">Observación:
+                    <textarea name="observacion" id="observacion" style="height: 300px;"
+                        placeholder="Escribe tus observaciones aquí..."></textarea>
+                </label></p>
+
+            <p><label for="estatura">
+                    <select name="grpoestatura" id="estatura">
+                        <option value="" disabled selected>Selecciona tu estatura</option>
+                        <option value="menos de 1.50m">Menor de 1.50</option>
+                        <option value="de 1.50m a 1.59m">De 1.50 a 1.59</option>
+                        <option value="de 1.60m a 1.69m">De 1.60 a 1.69</option>
+                        <option value="mayor a 1.70">Mayor a 1.70</option>
+                    </select>
+                </label></p>
+
+            <p><label>Cursos Llevados</label><br>
+                <input type="checkbox" name="cursos" value="matematica" id="matematica">
+                <label for="matematica">Matemática</label><br>
+                <input type="checkbox" name="cursos" value="lenguaje" id="lenguaje">
+                <label for="lenguaje">Lenguaje DSS</label><br>
+                <input type="checkbox" name="cursos" value="Introduccion a la investigacion" id="investigacion">
+                <label for="investigacion">Introducción a la Investigación</label><br>
+            </p>
+
+            <p><label>Ciclo Actual</label></p>
+            <input style="scale:1.5 ;" type="radio" name="ciclo" value="Primero"><label>Primero</label><br>
+            <input style="scale:1.5 ;" type="radio" name="ciclo" value="Segundo"><label>Segundo</label><br>
+            <input style="scale:1.5 ;" type="radio" name="ciclo" value="Tercero"><label>Tercero</label><br>
+            <input style="scale:1.5 ;" type="radio" name="ciclo" value="Cuarto"><label>Cuarto</label><br>
+            <input style="scale:1.5 ;" type="radio" name="ciclo" value="Quinto"><label>Quinto</label><br>
+            <input style="scale:1.5 ;" type="radio" name="ciclo" value="Sexto"><label>Sexto</label><br><br>
+
+            <label for="fecha">SELECCIONE FECHA:
+                <input style="font-size:25px" type="date" name="fecha" id="fecha">
+            </label><br><br>
+            <label for="clave">SELECCIONE CLAVE:
+                <input style="font-size:15px" type="password" name="clave" id="clave" minlength="5" maxlength="5"
+                    placeholder="Mínimo 5 caracteres" oninput="validarClave()" required>
+            </label>
+            <div id="advertenciaClave" style="color: red; display: none;">La clave debe tener exactamente 5 caracteres.
+            </div>
+
+
+            <label for="resetear">RESETEAR:
+                <input style="font-size:15px" type="reset" name="resetear" id="resetear">
+            </label><br>
+
+            <button type="button" onclick="FCapturarNombre()" style="font-size:20px; margin: 10px 0;">
+                Capturar Datos
+            </button><br><br>
+
+            <button type="submit" style="font-size:30px;">Enviar</button>
+        </form>
+    </section>
+    <!-- Sección de Manipulación del DOM -->
+    <section id="seccionDom" style="margin-top: 50px;">
+        <h1 style="background: aqua;text-align: center;color: rgb(0, 0, 0); padding: 10px;">Manipulación del DOM con JavaScript</h1>
+
+        <p id="ejmDOM1" class="classDOM1">Este es el primer texto a aplicar DOM</p>
+        <button onclick="FCambioColor()">Cambiar Color y Texto</button>
+        <button onclick="FAgregarTextoPermanente()">Agregar Texto a Variable</button>
+
+        <div style="margin-top: 20px;">
+            <p class="classDOM1">Texto 1 de classDOM1</p>
+            <p class="classDOM1">Texto 2 de classDOM1</p>
+            <p class="classDOM1">Texto 3 de classDOM1</p>
+            <h3 class="classDOM1">Texto 4 de classDOM1</h3>
+            <button onclick="FCambioClase1()">Cambiar Clase</button>
+        </div>
+        <br>
+        <h3>Crear dinámicamente un nuevo título (h1):</h3>
+        <section id="idCrearH1">
+            <button onclick="fcrearH1()">Crear H1</button>
+        </section>
+    </section>
+    <!-- Sección para probar el cambio de h2 por índice -->
+    <section>
+        <h1 style="background: aqua;text-align: center;color: rgb(0, 0, 0); padding: 10px;">Cambiar texto del H2</h1>
+        <h2>Elemento h2 - 1</h2>
+        <h2>Elemento h2 - 2</h2>
+        <h2>Elemento h2 - 3</h2>
+        <h2>Elemento h2 - 4</h2>
+        <h2>Elemento h2 - 5</h2>
+        <h2>Elemento h2 - 6</h2>
+        <h2>Elemento h2 - 7</h2>
+        <h2>Elemento h2 - 8</h2>
+        <h2>Elemento h2 - 9</h2>
+        <h2>Elemento h2 - 10</h2>
+        <h2>Elemento h2 - 11 (este cambiará)</h2>
+        <button onclick="FCambioTag1()" style="font-size: 20px; margin-top: 20px; text-align: center;">
+            Cambiar texto del H2 número 11
+        </button>
+    </section>
+    <button id="btnScrollTop" onclick="scrollToTop()">↑ Ir arriba</button>
+    <footer>
+        <p style="text-align: center;">@kevin reategui rios - Certus</p>
+    </footer>
+</body>
+</html>

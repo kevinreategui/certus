@@ -1,0 +1,172 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(161, 177, 118);
+    margin: 0;
+    padding: 0;
+}
+section {
+    width: 80%;
+    max-width: 700px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    background-color: aqua;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos del Menú de Navegación */
+nav.claseNav {
+    text-align: center;
+    background-color: #4CAF50;
+    padding: 20px 20px 20px 20px;
+}
+
+nav.claseNav a {
+    text-decoration: none !important;
+    color: white;
+    margin: 0 15px;
+    padding: 10px 20px;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.menu-item{
+    background: red;
+    padding: 20px 20px 20px 20px;
+    border-radius: 20px;
+}
+.menu-item a {
+    text-decoration: none; /*necesario para que no se vea la linea*/
+    color: #fff; /*color de texto del menu*/
+}
+
+nav.claseNav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Estilo para el submenú */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    position: relative;
+    /* Necesario para posicionar el submenú */
+    display: inline-block;
+    /* Elementos en línea */
+    margin-right: 20px;
+}
+
+nav ul li ul.submenu {
+    display: none;
+    /* El submenú está oculto por defecto */
+    position: absolute;
+    /* El submenú se posiciona debajo del menú */
+    left: 0;
+    top: 100%;
+    background-color: #333;
+    border-radius: 5px;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(10px);
+    /* Mueve ligeramente hacia abajo */
+}
+
+nav ul li:hover>ul.submenu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    /* El submenú sube al pasar el ratón */
+}
+
+nav ul li ul.submenu li {
+    margin: 5px 0;
+}
+
+nav ul li ul.submenu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li ul.submenu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/*formulario*/
+/* Título del formulario */
+h2 {
+    text-align: center;
+    margin-top: 0;
+    color: #333;
+}
+
+/* Etiquetas y campos */
+form p,
+label {
+    font-size: 18px;
+}
+
+/* Inputs de texto, contraseña, fecha, select y textarea */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Textarea más amplio */
+textarea {
+    resize: vertical;
+}
+
+/* Estilo de radio y checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    margin-bottom: 10px;
+}
+
+/* Botones */
+button,
+input[type="reset"] {
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Botón reset diferenciado */
+input[type="reset"] {
+    background-color: #f44336;
+}
+
+/* Hover en botones */
+button:hover,
+input[type="reset"]:hover {
+    opacity: 0.9;
+}
